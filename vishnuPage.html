@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en" class=" js touch csstransitions"><head>
+		<meta charset="utf-8">
+		<title>Vishnu Institute of Technology</title>
+		<meta name="vishnu" content="Vishnu Institute of Technology">
+		<meta name="VITB" content="Vishnu Institute of Technology, Bhimavaram"></head>
+        
+
+     </div>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+     <style>
+        *{
+            box-sizing: border-box;
+        }
+    
+        .site-slogan {
+    font-size: 12px;
+    margin-right: 90px;
+    font-style: italic;
+    color: #999999;
+    box-sizing: border-box;
+   }
+
+   .navbar-header{
+    text-align: center;
+   }
+   .navbar-header ul li{
+    width: 120px;
+    margin:15px ;
+    padding: 15px;
+   }
+   .navbar-header ul{
+    display: inline-flex;
+    text-align: center;
+    color: #cccccc;
+    list-style: none;
+   }
+  
+   .navbar-header ul li a{
+    text-decoration:none;
+    color: black;
+   }
+   .active,.navbar-header ul li:hover{
+    background-color: #ffffff;
+   }
+
+   .sub-menu-1{
+    display: none;
+   }
+   .navbar-header ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 15px;
+    margin-left: -15px;
+
+   }
+   .navbar-header ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+   }
+   .navbar-header ul li:hover .sub-menu-1 li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #ffffff;
+    border-radius: 0;
+    text-align: left;
+   }
+   .navbar-header ul li:hover .sub-menu-1 li:last-child{
+    border-bottom: none;
+   }
+   .navbar-header ul li:hover .sub-menu-1 li a:hover{
+    color:orangered;
+   }
+   .page-intro ul li{
+    width: 120px;
+    margin:15px ;
+    padding: 15px;
+   }
+   .page-intro ul {
+    display: inline-flex;
+    float: left;
+    padding: 15px;
+    width: 10px; ;
+    
+   }
+   .page-intro  li {
+     display: inline-flex;
+    float: left;
+    padding: 10px;
+    margin-top:  16px;
+    border-style: inset;
+    border-radius: 16px;
+    border-color: #cd3c2e;
+   }
+  
+.separator {
+    text-align: center;
+    display: block;
+    width: 60px;
+    height: 5px;
+    margin: 15px auto 15px;
+    background-color: #cccccc;
+    position: relative;
+    border: 1px solid #cccccc;
+}
+.separator:after {
+    width: 30px;
+    height: 5px;
+    background: #333333;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    content: "";
+}
+
+.space-top {
+    padding-top: 40px;
+    box-shadow: 10px;
+    color: #000;
+
+}
+.text-center {
+    text-align: center;
+}
+h1{
+    color: #343434;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700px;
+    padding-top: 80px;
+}
+
+p {
+    text-align: right;
+    margin: 0 0 10px;
+    margin-bottom: 20px
+}
+.sidebar .title {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    position: relative;
+}
+h3 {
+
+    text-align: right;
+    font-size: 22px;
+    color: #343434;
+    line-height: 1.2;
+    display: block;
+}
+
+.side.vertical-divider-left {
+    text-align: right;
+    border-left: none;
+    padding-left: 5px;
+    margin-left: 0px;
+}
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+body {
+   
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    background-color: #ffffff;
+}
+
+.overlay-container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+    
+
+.box-style-1 {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+.white-bg {
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    border: none !important;
+}
+.team-member.box-style-1 {
+    margin-top: 0;
+}
+*{
+    box-sizing:border-box;
+}
+img {
+    vertical-align: middle;
+}
+
+.col-sm-4{
+    float: left;
+    width: 15px;;
+    padding: 3px;
+    margin-top: 50px;
+}
+
+.col-sm-4 img{
+    height: 100px;
+    float: left;
+    padding: 3px;
+
+}
+.col-sm-6 img{
+    height: 60px;
+    float: left;
+    padding: 3px;
+    text-align: center;
+
+}
+
+
+
+
+.col-sm-4 {
+    
+    width: 13.3%;
+}
+
+
+.btn {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+}
+
+
+.btn-default {
+    background-color: #e84c3d;
+    color: #ffffff !important;
+    border-color: #cd3c2e;
+}
+.btn {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    min-width: 160px;
+    text-align: center;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin: 10px 0;
+    transition: all 0.2s ease-in-out;
+}
+.btn-white {
+    background-color: transparent;
+    color: #cd3c2e;
+    border: 1px solid #e84c3d;
+}
+.btn {
+    display: inline-block;
+    font-weight: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+h2 {
+    text-align: left;
+    color: #343434;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+
+}
+p {
+    margin-bottom: 20px;
+    text-align:justify;
+    margin: 0 0 10px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btn-white {
+    background-color: transparent;
+    color: #cd3c2e;
+    border: 1px solid #e84c3d;
+}
+.btn {
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    min-width: 160px;
+    text-align: center;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: inline-block;
+}
+   
+.call-to-action {
+    
+    text-align: center;
+}
+h1{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 10px
+
+}
+p {
+    margin-bottom: 5px;
+    text-align: justify;
+    margin: 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h4 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #343434;
+    line-height: 1.2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.col-md-7{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.call-to-action {
+   
+    text-align: center;
+}
+.col-md-7 p{
+    text-align: center;
+    margin: 0 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: border-box;
+}
+h4{
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+     </style>
+     <body>
+
+ <div class="logo">
+  <a href="index.php"><img id="logo" src="https://vishnu.edu.in/images/logo_red.png" alt="iDea"></a>
+ </div>
+
+ <div class="site-slogan"></div>  
+ <!--<b>Sri Vishnu Educational Society, Bhimavaram</b>-->
+     <b>Accredited by <b><a>NAAC 'A+'</a></b>(3.51 CGPA)&nbsp;&amp;&nbsp;<b><a>NBA</a></b></b>
+ </div>
+ <div class="container-fluid"></div>
+ <div class="navbar-header">
+ <ul>
+ <li class="active"><a href="#"><i class="fa fa-"></i>Home </a>
+    <div class="sub-menu-1">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Vision&Mission</a></li>
+          <li><a href="#">Founder Chairman</a></li>
+          <li><a href="#">Why Choose Us</a></li>
+          <li><a href="#">Campus Life</a></li>
+        </ul>
+        </div>
+</li>
+
+ <li><a href="#"><i class="fa fa-"></i> Admissons</a>
+    <div class="sub-menu-1">
+    <ul>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Center Of Excellence</a></li>
+        <li><a href="#">academic Calender</a></li>
+        <li><a href="#">Faculty Director</a></li>
+        <li><a href="#"> Library</a></li>
+        <li><a href="#">Autonomous</a></li>
+        <li><a href="#">Student portal</a></li>
+        <li><a href="#">Free Payment portal</a></li>
+        
+      </ul>
+      </div>
+ </li>
+ <li><a href="#"><i class="fa fa-"></i>Exminations</a>  <div class="sub-menu-1">
+    <ul>
+        <li><a href="#">Departments</a></li>
+        <li><a href="#">Center Of Excellence</a></li>
+        <li><a href="#">academic Calender</a></li>
+        <li><a href="#">Faculty Director</a></li>
+        <li><a href="#"> Library</a></li>
+        <li><a href="#">Autonomous</a></li>
+        <li><a href="#">Student portal</a></li>
+        <li><a href="#">Free Payment portal</a></li>
+        
+      </ul>
+      </div>
+ </li>
+ <li><a href="#"> <i class="fa fa-"></i> Research</a></li>
+ <li><a href="#"><i class="fa fa-"></i> News</a></li>
+ <li><a href="#"><i class="fa fa-"></i> Placements</a></li>
+</ul>
+ </div>
+ <div class="container1">
+      <div class="row">
+     <img src="https://vishnu.edu.in/images/PEGA_Award2022.jpg">             
+ </div>
+ <div class="page-intro";>
+
+<ul>
+ <li>GSAC</li>
+ <li>NIRF</li>
+ <li>NACC</li>
+                    <li>ARIIA</li>
+                    <li>NSS</li>
+                    <li>IEDC</li>
+                    <li>APHERMC</li>
+                   </ul>         
+                        </div>
+                        <div class="clearfix">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <br>
+                                        <h1>overview</h1>
+                                        <div class="separator"></div>
+                                        <p class="lead text-center">Vishnu Institute of Technology</p>
+                                    
+                                    </div>
+                                    <p>Vishnu Institute of Technology, was established in 2008 by Sri Vishnu Educational Society (SVES), a leading educational trust to promote quality education, under the aegis of eminent philanthropist Padma Bhushan Dr. B.V.Raju (Late). The institute is approved by AICTE and is permanently affiliated to JNTUK, Kakinada. It has got Autonomous status in the academic year 2019-20 and is accredited by NBA and NAAC 'A+' with 3.51 CGPA.</p>
+                                
+                                    <aside class="sidebar col-md-6">
+										<div class="side vertical-divider-left">
+											<div class="block clearfix">
+                                            
+                                                 <div>
+												<h3 class="title margin-top-clear">Vishnu at a glance</h3>
+												<div class="embed-responsive embed-responsive-16by9">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UFkcUqbscXo?rel=0" width="400" height="300" style="width:400px;height:300px;"></iframe>
+										</div> 
+								</div>
+							</div>
+                            <div class="col-md-3 col-sm-4">
+                                <div class="box-style-1 white-bg team-member">
+                                    <div class="overlay-container">
+                                        <img src="https://vishnu.edu.in/images/naac.jpg" alt="">
+                                    </div>
+                                </div>
+                                </div>
+                                    <div class="col-md-3 col-sm-4">
+                                        <div class="box-style-1 white-bg team-member">
+                                                <div class="overlay-container">
+                                                <img src="https://vishnu.edu.in/images/nba.jpg" alt="">									
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>	
+                                                <div class="col-md-3 col-sm-4">
+                                                    <div class="box-style-1 white-bg team-member">
+                                                        <div class="overlay-container">
+                                                            <img src="https://vishnu.edu.in/images/Jntuk-logo.png" alt="">
+                                                        </div>
+                                                    </div></div>
+ <div class="col-md-3 col-sm-4">                                                       
+    <div class="box-style-1 white-bg team-member">                                                             
+        
+<div class="overlay-container">                                                              
+     <img src="https://vishnu.edu.in/images/AICTE.jpg" alt="">									
+</div>
+ </div></div>
+ <div class="col-md-6 col-sm-6">
+    <div class="box-style-1 white-bg team-member">
+            <div class="overlay-container">
+            <a href="Docs/ARI_Report_2021.pdf" target="_blank"><img src="https://vishnu.edu.in/images/ARIIA_LOGO.jpg" alt=""></a>									
+            </div>								
+    </div>
+    <a class="btn btn-default"> &nbsp;Counselling Code : <b>VITB</b> &nbsp;</a>
+    <a class="btn btn-white more" data-toggle="modal" data-target="#myModal">Read more <i class="pl-10 fa fa-info"></i></a>
+ </div>   
+ <div class="col-md-12">
+    <h1 class="text-center">About Us</h1>
+    <div class="separator"></div>
+    <p class="lead text-center">Sri Vishnu Educational Society has stood first among equals because of its quest and hard work to develop as an educational society which stands apart.</p>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="title">Sri Vishnu Educational Society</h2>  
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://vishnu.edu.in/images/logo.jpg" alt="SVES">
+            </div>
+            <div class="col-md-8">
+                <p>The Society aims and strives for continuous improvement in the field of education and is committed to delivering world class education in various fields to students from different strata. </p>
+            </div>
+            <p> Our founder chairman Late Padma Bhushan Dr. B.V. Raju, through his excellent vision and foresight established many educational institutions. These institutions are playing a vital role in moulding and shaping the future of thousands of students year after year.</p>
+        </div>
+        <a href="http://srivishnu.edu.in" target="_blank" class="btn btn-white">S V E S</a>
+        <a href="Management.php" class="btn btn-white">Management Team</a> 
+    </div>  
+    <div id="header-2">
+        <div class="section parallax default-translucent-bg parallax-bg-3">
+            <div class="container">
+                <div class="call-to-action">
+                    <div class="row">
+                        <div class="col-md-7"><img src="https://vishnu.edu.in/images/founder.PNG" width="150" height="150"></div>
+                        <h1 class="title text-center">Padma Bhushan Dr. B V Raju</h1> 
+                        <p class="text-center">The Founder Chairman of Sri Vishnu Educational Society </p>
+                        <p>Throughout his life, both as an industrialist and an educationist, Late Padma Bhushan Dr. B.V. Raju continued to devote himself to the service of the people. He always kept his doors open to the poor and needy and participated actively in welfare programmes for improving the socio-economic conditions of society. His services for the welfare of the people are innumerable and invaluable.
+                        </p>
+                        <a class="btn btn-default" href="Management.php">Know more </a>				
+                        </div>	
+                        <div class="col-md-12">
+
+							<h4 class="text-center">Why Choose Vishnu</h4>
+							<div class="separator"></div>
+							<p class="lead text-center">At VISHNU, you'll enjoy a learning environment where you can grow, explore and discover <br>all that you are capable of achieving.</p>			
+     </div>               
+     </body>
+</html>
